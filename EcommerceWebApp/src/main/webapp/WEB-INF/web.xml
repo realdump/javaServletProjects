@@ -1,0 +1,27 @@
+<web-app>
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>com.ecommerce.controller.ProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>CartServlet</servlet-name>
+    <servlet-class>com.ecommerce.controller.CartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/add-to-cart</url-pattern>
+	</servlet-mapping>
+    <servlet>
+    <servlet-name>UpdateCartServlet</servlet-name>
+    <servlet-class>com.ecommerce.controller.UpdateCartServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdateCartServlet</servlet-name>
+    <url-pattern>/update-cart</url-pattern>
+</servlet-mapping>
+    
+</web-app>
